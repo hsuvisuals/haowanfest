@@ -1,0 +1,313 @@
+
+body {
+    margin: 0;
+    padding: 0;
+   overflow-x: hidden;
+}
+nav {
+    background-color:#981010;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#logo {
+    width: 4em;
+   position: relative;
+    left: -5.7em;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    margin-right: 4em;
+}
+
+nav h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25pt;
+   margin-bottom: 0;
+    position: relative;
+    left: -11.15em;
+    top: .5em;
+    margin-top: .2em;
+    color: white;
+    animation: glowing 1000ms infinite;
+    padding: .1em;
+}
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 -10px #c4a300; }
+  40% { box-shadow: 0 0 20px #c4a300; }
+  60% { box-shadow: 0 0 20px #c4a300; }
+  100% { box-shadow: 0 0 -10px #c4a300; }
+}
+
+#home {
+    position: relative;
+    right: -5em;
+    top: .5em;
+    padding: .2em;
+   
+}
+#home:hover {
+    background-color: #FFCA07;
+}
+
+#event {
+    position: relative;
+    right: -5em;
+    top: .5em;
+   padding: .2em;
+}
+
+#event:hover {
+    background-color: #FFCA07;
+}
+
+#more {
+    position: relative;
+    right: -5em;
+    top: .5em;
+  padding: .2em;
+}
+
+#more:hover {
+    background-color: #FFCA07;
+}
+
+#heroimg {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.herotext1{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    top: 3em;
+    left: 5em;
+    color: white;
+    font-size: 9em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.herotext2{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    top: 4em;
+    left: 6em;
+    color: white;
+    font-size: 9em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.herotext3{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    top: 5em;
+    left: 5.1em;
+    color: white;
+    font-size: 9em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ct-btn-scroll {
+  width: 3.063em;
+  height: 3.063em;
+  position: absolute;
+  bottom: 0.875em;
+  left: 4em;
+  right: 0;
+  margin: auto;
+  padding-top: 31.250em;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+img, 
+figure {
+  max-width: 100%;
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #981010;
+    padding: 2em;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+h2 {
+    color: white;
+    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+p {
+    padding-left: 20em;
+    padding-right: 20em;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10pt;
+    line-height: 2em;
+}
+
+#direction {
+    color: black;
+    margin-top: 1em;
+}
+
+h3 {
+    text-align: center;
+     font-family: 'Quicksand', sans-serif;
+    
+}
+
+#addy {
+     font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+h4 {
+    
+}
+
+#map {
+    margin: 0;
+    padding: 0;
+}
+
+#google {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    background-color: #981010;
+    margin: 0;
+    padding: 0;
+}
+
+footer h4 {
+   color: white;
+}
+
+#festival {
+    text-align: left;
+    position: relative;
+    left: 6em;
+    bottom: -2.5em
+}
+
+#copyright {
+    text-align: left;
+    position: relative;
+    left: 6em;
+    bottom: -2.5em;
+}
+
+#address {
+    text-align: right;
+    position: relative;
+    right: 6em;
+    bottom: 2.5em;
+}
+
+#number {
+    text-align: right;
+    position: relative;
+    right: 6em;
+    bottom: 2.5em;
+}
+
+@media only screen and (max-width: 960px) {
+    #logo {
+        top: 2em;
+        left: -8em;
+    }
+    
+    nav h1{
+        top: 1.3em;
+    }
+    
+    #home {
+        left: 11em;
+        top: -1.6em;
+    }
+    
+    #event {
+        left: 10.5em;
+        top: -1.6em;
+    }
+    
+    #more{
+        left: 10em;
+        top: -1.6em;
+    }
+    
+    .ct-btn-scroll{
+        top: -8em;
+        left: 0em
+    }
+    
+    .herotext1 {
+        font-size: 5em;
+        left: 4.1em;
+        top: 4em
+    }
+    
+    .herotext2 {
+        font-size: 5em;
+        left: 5.1em;
+        top: 5em
+    }
+    
+    .herotext3 {
+        font-size: 5em;
+        left: 4.1em;
+        top: 6em
+    }
+    
+    p {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+    
+}

@@ -1,0 +1,225 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+nav {
+    background-color:#981010;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#logo {
+    width: 4em;
+   position: relative; 
+    left: -43.5em; 
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 -10px #c4a300; }
+  40% { box-shadow: 0 0 20px #c4a300; }
+  60% { box-shadow: 0 0 20px #c4a300; }
+  100% { box-shadow: 0 0 -10px #c4a300; }
+}
+
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding-right: 4em;
+}
+
+nav h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25pt;
+   margin-bottom: 0;
+    position: relative;
+    left: -.5em;
+    top: .5em;
+    margin-top: .2em;
+    color: white;
+    animation: glowing 1000ms infinite;
+    padding: .1em;
+}
+
+
+#home {
+    position: relative;
+    right: -5em;
+    top: .5em;
+    padding: .2em;
+}
+#home:hover {
+    background-color: #FFCA07;
+}
+
+#event {
+    position: relative;
+    right: -5em;
+    top: .5em;
+    padding: .2em;
+}
+
+#event:hover {
+    background-color: #FFCA07;
+}
+
+#more {
+    position: relative;
+    right: -5em;
+    top: .5em;
+    padding: .2em;
+}
+
+#more:hover {
+    background-color: #FFCA07;
+}
+
+#sponsor {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#sponsorhead {
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    margin: 1em;
+}
+
+.slogo {
+    width: 10%;
+    height: 20%;
+    margin-right: 3em;
+    margin-left: 3em;
+    
+}
+
+.slogo:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+#aboutsponsor {
+   margin: 0;
+    padding: 1em;
+    background-color: #FFCA07;
+    height: 65vh;
+}
+
+#msheader {
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    
+}
+
+#aboutsponsor h3 {
+    font-family: 'Source Serif Pro', serif;
+    padding-left: 15em;
+}
+
+#cacf {
+    position: absolute;
+    right: 7em;
+    width: 20%;
+    top: 11em;
+    animation: spin 2000ms 1 linear;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+
+#aboutsponsor p {
+    font-family: 'Quicksand', sans-serif;
+    padding-right: 50em;
+    position: relative;
+    left: 17.5em;
+}
+#aboutsponsor ul li {
+    padding-left: 20em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+    background-color: #981010;
+    margin-top: 0;
+    padding: 0;
+}
+
+footer h4 {
+   color: white;
+}
+
+#festival {
+    text-align: left;
+    position: relative;
+    left: 6em;
+    bottom: -2.5em
+}
+
+#copyright {
+    text-align: left;
+    position: relative;
+    left: 6em;
+    bottom: -2.5em;
+}
+
+#address {
+    text-align: right;
+    position: relative;
+    right: 6em;
+    bottom: 2.5em;
+}
+
+#number {
+    text-align: right;
+    position: relative;
+    right: 6em;
+    bottom: 2.5em;
+}
+

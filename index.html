@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+
+<head> 
+     
+    <meta charset="UTF-8">
+    
+    <title>Chinese Fun Fest</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Serif+Pro" rel="stylesheet">
+    
+  
+
+</head>
+
+<body>
+
+<nav>    
+    
+    <img id="logo" src="img/haowanlogo.svg" alt="festival logo">
+    <h1> Chinese Fun Festival</h1>
+    <ul>
+        <a id="home" href="index.html"><li>Home</li></a>
+        <a id="event" href="events/index.html"><li>Events</li></a>
+        <a id="more" href="sponsors/index.html"><li>More Info</li></a>
+        
+    </ul>
+</nav>    
+
+ <img id="heroimg" src="img/heroimagenotext1.png" alt="hero image">
+    
+<article>    
+    <h1 class="herotext1">Chinese</h1>
+    <h1 class="herotext2">Fun</h1>
+    <h1 class="herotext3">Festival</h1>
+    </article>
+  
+    
+    <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+    
+    
+    <section>
+    
+    <h2>About the Event</h2>
+    
+    <p>Ever want to travel the world and experience other cultures but don’t have the money to do it? Now you have a chance! Join us at the Chinese Hao Wan Festival to be immersed into Chinese Culture within three days. This festival was designed to encapsulate all of the Chinese holidays that happen throughout the year into three days. These holidays include New Years, Mid-Autumn Festival, Lantern Festival and Dragon Boat Festival.  About 1.4 billion people live in China, according to the World Bank, representing 56 ethnic minority groups. Which means that Chinese culture is rich and diverse. The San Francisco Bay Area is also known for its rich Chinese history. There will be fun activities for all ages which makes it a perfect event to bring out your friends and family and have a sweet time. Hao wan or 好玩 is Chinese for FUN. All proceeds will be given to (organization). Admission is only $5 for adults age 18+ and $3 for minors 17 or under and kids 5 or under get in for free.</p>
+    
+</section>
+    
+<div id="map">
+    <h2 id="direction">Directions</h2>
+    <div id="google">here</div>
+    <h3>Alameda County Fairgrounds</h3>
+    <h4 id="addy">4501 Pleasanton Ave. Pleasanton Ca 94566</h4>
+    
+    </div>    
+    
+<footer>
+    <h4 id="festival">Hao Wan Festival</h4>
+    <h4 id="copyright">Copyright 2018</h4>
+    <h4 id="address">4501 Pleasanton Ave. Pleasanton Ca 94566</h4>
+    <h4 id="number">408.613.0138</h4>
+    <!--maybe add logo down here too or something-->
+    
+    </footer>
+    
+    <script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(37.6618756,-121.8910),
+    zoom:15,
+};
+var map=new google.maps.Map(document.getElementById("google"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsOrzZRWnONnhl3EcSM7TV682Ij0qMsjU&callback=myMap"></script>
+    
+    <script>
+    $(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+    
+    </script>
+
+  
+    
+    
+</body>
+                   
+</html>
